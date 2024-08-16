@@ -26,6 +26,14 @@ body {
     min-height:100vh;
 }
 
+a {
+    color:var(--color-primary);
+}
+
+fieldset{
+    border-radius:30px;
+}
+
 ul {
     margin:0;
     border:0;
@@ -33,36 +41,98 @@ ul {
     list-style-type: none;
 }
 
+li {
+    margin-bottom:1rem;
+}
+
+li > * {
+    margin:0.1rem;
+}
+
+input {
+    width:85%;
+    height:4%;
+    border-radius:25px;
+    font-family:"Press Start 2P", sans-serif;
+    background:transparent;
+    border:2px solid black;
+    color:antiquewhite;
+    font-size:0.5em;
+}
+
+button {
+    font-family: "Press Start 2P", sans-serif;
+    border-radius:25px;
+    padding:0.5vh;
+}
+
+p {
+    margin: 0.7vh 0;
+}
+
+label {
+    font-size: 1.5vh;
+}
+
+span {
+    color:var(--color-primary);
+    font-weight: bold;
+}
+
 .content > div{ 
     display:flex;
     position:absolute
 }
 
-
-
 .container-box {
     display:flex;
     flex-direction:column;
+    align-items:center;
+    justify-content: center;
     position:fixed;
     right:0;
     background-color:rgb(17, 5, 5);
     opacity:0.9;
-    width:30vw;
+    width:40vw;
     height:100vh;
-    font-size:16px;
-}
-
-.container-box > div {
-    margin: 0 0.8rem;
+    font-size:2vh;
 }
 
 .form-box {
     color:antiquewhite;
+    height:50%;
+    width:70%;
+    margin: 2vh;
 }
 
-.text-box > *{
-    color:antiquewhite;
-    font-size:3em;
+.form-item:first-child {
+    margin-top:2vh;
+}
+
+.button-box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:0vh;
+}
+
+.button-box > button{
+    width:50%;
+}
+
+.button-box:last-child {
+    font-size:1vh;
+}
+
+#footer {
+    height:3vh;
+    position:fixed;
+    padding: 0.5vh 0.5vh 0 0.5vh;
+    bottom: 0;
+    left: 0;
+    width:60vh;
+    background-color: transparent;
 }
 
 .biker-video {
@@ -71,4 +141,27 @@ ul {
     object-fit:fill;
     filter:hue-rotate(var(--hue-rotate-sun));
     object-position: center;
+}
+
+#footer-text {
+    font-size:1vh;
+    padding-left:0.6vw;
+}
+
+#day-night {
+    margin:2vh 2vw;
+    font-size:3vh;
+    top:0;
+    right:0;
+    position:fixed;
+    width:5vw;
+}
+
+#odin-logo {
+    margin:2vh 2vw;
+    font-size:3vh;
+    top:0;
+    left:0;
+    position:fixed;
+    width:5vw;
 }
