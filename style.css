@@ -165,3 +165,7 @@ span {
     height:8vh;
     width:20vw;
 }
+
+.form-item > input:invalid {
+    border: 2px solid var(--color-primary);
+}
