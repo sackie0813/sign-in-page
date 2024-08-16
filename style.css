@@ -93,7 +93,7 @@ span {
     right:0;
     background-color:rgb(17, 5, 5);
     opacity:0.9;
-    width:40vw;
+    width:32vw;
     height:100vh;
     font-size:2vh;
 }
@@ -131,7 +131,7 @@ span {
     padding: 0.5vh 0.5vh 0 0.5vh;
     bottom: 0;
     left: 0;
-    width:60vh;
+    width:68vh;
     background-color: transparent;
 }
 
@@ -148,20 +148,20 @@ span {
     padding-left:0.6vw;
 }
 
-#day-night {
-    margin:2vh 2vw;
-    font-size:3vh;
-    top:0;
-    right:0;
-    position:fixed;
-    width:5vw;
-}
-
 #odin-logo {
     margin:2vh 2vw;
-    font-size:3vh;
     top:0;
     left:0;
     position:fixed;
-    width:5vw;
+    background-color: rgb(17, 5, 5);
+    border:transparent;
+    opacity:0.7;
+    border-radius: 0.7rem;
+    padding:0.2rem;
+}
+
+#odin-logo > img {
+    opacity:1;
+    height:8vh;
+    width:20vw;
 }
