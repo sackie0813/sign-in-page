@@ -1,8 +1,14 @@
 :root {
+    --hue-rotate-sun:180deg;
     --color-primary:#e98227;
     --color-secondary:#33ff00;
     --color-light:#e8e6e3;
     --color-dark:#313436;
+    font-size:32px;
+}
+
+:root.night-mode {
+    --hue-rotate-night:90deg;
 }
 
 html {
@@ -20,28 +26,49 @@ body {
     min-height:100vh;
 }
 
-.content > div{ 
-    position:absolute;
+ul {
+    margin:0;
+    border:0;
+    padding:0;
+    list-style-type: none;
 }
 
+.content > div{ 
+    display:flex;
+    position:absolute
+}
+
+
+
 .container-box {
+    display:flex;
+    flex-direction:column;
     position:fixed;
     right:0;
     background-color:rgb(17, 5, 5);
     opacity:0.9;
     width:30vw;
     height:100vh;
+    font-size:16px;
+}
+
+.container-box > div {
+    margin: 0 0.8rem;
+}
+
+.form-box {
+    color:antiquewhite;
 }
 
 .text-box > *{
-    position:fixed;
     color:antiquewhite;
+    font-size:3em;
 }
 
 .biker-video {
     height:100vh;
     width:100vw;
     object-fit:fill;
-    filter:hue-rotate(90deg);
+    filter:hue-rotate(var(--hue-rotate-sun));
     object-position: center;
 }
